@@ -20,3 +20,16 @@ console.log(contador1()); // 1
 console.log(contador1()); // 2
 console.log(contador2()); // 1 (independiente)
 console.log(contador1()); // 3
+
+// Closures con parámetros
+function crearSaludador(prefijo) {
+    return function (nombre) {
+        return `${prefijo}, ${nombre}!`;
+    };
+}
+
+const saludarFormal = crearSaludador("Buenos días");
+const saludarInformal = crearSaludador("¡Hola");
+
+console.log(saludarFormal("Sr. García")); // "Buenos días, Sr. García!"
+console.log(saludarInformal("María"));    // "¡Hola, María!"
