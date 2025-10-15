@@ -1,13 +1,13 @@
 // Todas las cards
-const todasLasCards = document.querySelectorAll('.card');
+const todasLasCards = document.querySelectorAll(".card");
 console.log(todasLasCards); // NodeList(3) [div.card, div.card, div.card]
 
 // Todos los botones
-const botones = document.querySelectorAll('button');
+const botones = document.querySelectorAll("button");
 
 // Selectores complejos
 const linksExternos = document.querySelectorAll('a[target="_blank"]');
-const inputsRequeridos = document.querySelectorAll('input[required]');
+const inputsRequeridos = document.querySelectorAll("input[required]");
 
 // NodeList ya tiene forEach
 todasLasCards.forEach((card, index) => {
@@ -16,8 +16,7 @@ todasLasCards.forEach((card, index) => {
 
 // Convertir a array si necesitas otros métodos
 const botonesArray = Array.from(botones);
-const botonesActivos = botonesArray.filter(btn => !btn.disabled);
+const botonesActivos = botonesArray.filter((btn) => !btn.disabled);
 
 console.log(botonesArray);
 console.log(botonesActivos);
-

@@ -1,0 +1,43 @@
+body {
+  font-family: sans-serif;
+  background-color: #fff;
+  color: #000;
+  transition: background 0.3s, color 0.3s;
+}
+
+body.tema-oscuro {
+  background-color: #121212;
+  color: #fff;
+}
+
+.botones {
+  margin: 1rem 0;
+}
+
+button {
+  padding: 8px 12px;
+  margin-right: 5px;
+  cursor: pointer;
+  border: none;
+  background-color: #ddd;
+}
+
+button:hover {
+  background-color: #ccc;
+}
+
+.tab {
+  display: none;
+  background-color: #f2f2f2;
+  padding: 15px;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+.tab.tema-oscuro-secondary {
+  background-color: #333;
+}
+
+.tab.activo {
+  display: block;
+}
