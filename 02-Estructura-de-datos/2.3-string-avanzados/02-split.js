@@ -1,4 +1,4 @@
-// Métodos de transformación - separador
+// Métodos de transformación - convierte un string en un array
 
 const frase = "manzana,pera,uva,naranja";
 const frutas = frase.split(",");

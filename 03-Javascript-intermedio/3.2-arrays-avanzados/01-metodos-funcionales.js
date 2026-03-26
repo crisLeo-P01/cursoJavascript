@@ -23,7 +23,7 @@ const conDescuento = productos.map(producto => ({
 }));
 
 ///////////////
-// FILTER - filtra elementos que complan condición //////////////////
+// FILTER - filtra elementos que cumplan condición //////////////////
 const numeros2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 // Números pares
